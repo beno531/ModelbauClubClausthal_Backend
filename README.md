@@ -13,9 +13,5 @@ Website for Modellbauclub Clasuthal Zellerfeld
 ## Getting started
 Run the  frontend: 
 
-    yarn install
-	yarn develop
-Run the  backend: 
-
-    yarn install
-	yarn develop
+    npm install
+	npm run develop
