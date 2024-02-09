@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "mbc-backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -7,40 +7,28 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "heroku-prebuild": "node scripts/postgres-env.js",
-    "heroku-postbuild": "strapi build && node scripts/postinstall.js"
+    "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "fs": "^0.0.1-security",
-    "knex": "<0.20.0",
-    "path": "^0.12.7",
-    "pg": "^8.0.3",
-    "rimraf": "^3.0.1",
-    "sqlite3": "latest",
-    "strapi": "3.1.0",
-    "strapi-admin": "3.1.0",
-    "strapi-connector-bookshelf": "3.1.0",
-    "strapi-plugin-content-manager": "3.1.0",
-    "strapi-plugin-content-type-builder": "3.1.0",
-    "strapi-plugin-email": "3.1.0",
-    "strapi-plugin-graphql": "3.1.0",
-    "strapi-plugin-upload": "3.1.0",
-    "strapi-plugin-users-permissions": "3.1.0",
-    "strapi-provider-upload-cloudinary": "3.1.0",
-    "strapi-utils": "3.1.0",
-    "unzip-stream": "^0.3.0"
+    "@strapi/strapi": "4.20.0",
+    "@strapi/plugin-users-permissions": "4.20.0",
+    "@strapi/plugin-i18n": "4.20.0",
+    "@strapi/plugin-cloud": "4.20.0",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "STRAPI-STARTER-BLOG"
+    "uuid": "df97f195-5c0a-46d2-9f75-5b5c4610e1fb"
   },
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
