@@ -1,6 +1,9 @@
 name: Publish Docker image
 
-on: [push]
+on:
+  push:
+    branches:
+      - strapi-dev
 
 jobs:
   push_to_registry:
@@ -28,5 +31,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: strapi
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
